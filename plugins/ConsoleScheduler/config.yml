@@ -30,4 +30,4 @@ CommandSchedule:
   Command3:
     After: 14400
     Repeat: false
-    Command: restart
+    Command: stop
