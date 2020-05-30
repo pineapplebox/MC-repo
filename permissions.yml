@@ -1,0 +1,6 @@
+server.basics:
+       description: Default 2b2t perms
+       default: true
+       children:
+          bukkit.command.tps: true
+          minecraft.command.list: true
