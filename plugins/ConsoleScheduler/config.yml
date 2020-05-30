@@ -20,12 +20,12 @@ CommandSchedule:
   Command1:
     After: 15
     Repeat: true
-    Interval: 30
+    Interval: 60
     Command: lagg gc
   Command2:
     After: 60
     Repeat: true
-    Interval: 60
+    Interval: 120
     Command: lagg unloadchunks
   Command3:
     After: 14400
