@@ -1,0 +1,33 @@
+# Configuration explanation below ~ 
+# 
+# ALL TIMES ARE IN SECONDS!
+# Initial delay is the time before the plugin starts starting 
+# the commands in the schedule. This is in place so that other
+# plugins have the time to start. You could set this to 0, 
+# but errors may occur.
+# Make sure the Command1, Command2, Command3 etc. are numbered
+# in succession. This will ensure they all load.
+# 
+# Also make sure you enter a command, heh.
+# 
+# 1 minute = 60 seconds. 1 hour = 3600 seconds
+# HOUR in 24-hour format!
+# SpecificTime commands ALWAYS repeat!
+
+CheckUpdates: false
+InitialDelay: 5
+CommandSchedule:
+  Command1:
+    After: 15
+    Repeat: true
+    Interval: 30
+    Command: lagg gc
+  Command2:
+    After: 60
+    Repeat: true
+    Interval: 60
+    Command: lagg unloadchunks
+  Command3:
+    After: 14400
+    Repeat: false
+    Command: restart
